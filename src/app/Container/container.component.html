@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI</title>
+    <link rel="stylesheet" href="container.component.scss">
+</head>
+<body>
+    <header class="header">
+        <a href="container.component.html" class="logo">ADDICITION CONTROLLER</a>
+        </header>
+
+    <video autoplay loop class="back-video" muted plays-lnline>
+        <source src="../../assets/video.mp4" type="video/mp4">
+    </video>
+    <div class="comment-box">
+        <h1 class="header2">Details</h1>  
+        <br>   
+        <form (submit)="onSubmit()">
+            <input type="text" name="full name" [(ngModel)]="fullName" placeholder="Full Name...">
+
+            <input type="number" name="age" [(ngModel)]="age" placeholder="Age...">
+
+            <input type="text" name="your addiction" [(ngModel)]="addiction" placeholder="Your addiction...">
+
+            <textarea name="addiction" [(ngModel)]="addictionDetails" cols="30" rows="10" placeholder="Type Your Addiction...."></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+          
+    </div>
+
+      
+</body>
+</html>
