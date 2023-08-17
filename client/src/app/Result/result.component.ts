@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./result.component.scss']
 })
 export class ResultComponent {
-  addictionDetails: string = '';
+  addictionDetails: string = 'You are going in a wrong direction. You are getting addcited to using mobile phone too much now. you have to stop it.';
   router: any;
   result: any;
 
