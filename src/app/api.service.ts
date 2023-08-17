@@ -10,8 +10,14 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  submitForm(data: any): Observable<any> {
-    const url = `${this.backendUrl}/submit`; // Replace 'submit' with your actual API endpoint
+  sendCombinedData(data: any): Observable<any> {
+    const url = `${this.backendUrl}/send-data`; // Replace 'send-data' with your actual API endpoint
     return this.http.post(url, data);
   }
+
+  getPromptData(): Observable<any> {
+    const url = `${this.backendUrl}/output`; // Replace 'get-prompt-data' with your actual API endpoint
+    return this.http.get(url);
+  }
+
 }

@@ -33,34 +33,20 @@ body {
 
 .comment-box {
     position: fixed;
+    padding: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: transparent;
-    width: 400px;
+    //width: 400px;
     padding: 30px;
     backdrop-filter: blur(20px);
     border-radius: 10px;
     box-shadow: 0 0 30px rgb(0, 250, 250);
 }
 
-.comment-box h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
 .comment-box input,
 .comment-box textarea {
-   // position: absolute;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s;
+    border: 1px solid #ffffff;
 }
 
 .comment-box input:focus,
@@ -70,21 +56,6 @@ body {
 
 .comment-box textarea {
     height: 120px;
-}
-
-.comment-box button {
-    border: 0;
-    padding: 10px 30px;
-    background-color: #007bff;
-    font-size: 18px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.comment-box button:hover {
-    background-color: #0ef;
 }
 
 .back-video {
@@ -97,4 +68,16 @@ body {
     height: auto;
     z-index: -1;
     
+}
+
+.comment-box button {
+    border: 0;
+    padding: 10px 30px;
+    background-color: #007bff;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
 }

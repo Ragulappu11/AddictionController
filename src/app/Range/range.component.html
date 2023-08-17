@@ -7,18 +7,38 @@
     <link rel="stylesheet" href="range.component.scss">
 </head>
 <body>
+
+    <header class="header">
+        <a href="range.component.html" class="logo">ADDICITION CONTROLLER</a>
+        </header>
+
+    <video autoplay loop class="back-video" muted plays-lnline>
+        <source src="../../assets/video.mp4" type="video/mp4">
+    </video>
+
     <div class="comment-box">
-        <label for="alpha">Alpha:</label>
-        <input type="text" id="alpha" [(ngModel)]="alpha">
+
+        <form (submit)="onSave()">
+
+        <label for="PO3">PO3:</label>
+        <input type="text" id="PO3" name="PO3" [(ngModel)]="PO3" placeholder="PO3">
       
-        <label for="beta">Beta:</label>
-        <input type="text" id="beta" [(ngModel)]="beta">
+        <label for="PO4">PO4:</label>
+        <input type="text" id="PO4" name="PO4" [(ngModel)]="PO4" placeholder="PO4">
       
-        <label for="gamma">Gamma:</label>
-        <input type="text" id="gamma" [(ngModel)]="gamma">
+        <label for="F6">F6:</label>
+        <input type="text" id="F6" name="F6" [(ngModel)]="F6" placeholder="F6">
       
-        <label for="delta">Delta:</label>
-        <input type="text" id="delta" [(ngModel)]="delta">
+        <label for="C4">C4:</label>
+        <input type="text" id="C4"  name="C4" [(ngModel)]="C4" placeholder="C4">
+
+        <label for="CP4">CP4:</label>
+        <input type="text" id="CP4"  name="CP4" [(ngModel)]="CP4" placeholder="CP4">
+
+        <button type="buttom" (click)="onSave()">Save</button>
+        
+        <button type="submit">Submit</button>
+    </form>
       </div>
       
 </body>

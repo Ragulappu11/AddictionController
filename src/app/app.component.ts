@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,8 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+onSubmit() {
+throw new Error('Method not implemented.');
+}
   title = 'GenAI';
 }

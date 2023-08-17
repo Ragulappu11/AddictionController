@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './Container/container.component';
 import { rangeComponent } from './Range/range.component';
-import { ApiService } from './api.service';
+import { ResultComponent } from './Result/result.component';
 
 const routes: Routes = [
   {
@@ -13,6 +13,10 @@ const routes: Routes = [
     path: "range",
     component: rangeComponent,
   },
+  {
+    path: "result",
+    component: ResultComponent
+  }
 ]
 
 
